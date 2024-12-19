@@ -4,6 +4,8 @@ step1)NodeJS
       npm - node package manager
       json-server
 
+Check in the Environmental setup
+
 ste2) verification by
    node --version
    npm --version
