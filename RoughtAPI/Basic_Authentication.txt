@@ -5,6 +5,11 @@
 
 1.Basic Authentication:
 -----------------------
-    
+      https://postman-echo.com/basic-auth
       username: postman
       password: password
+
+
+        https://the-internet.herokuapp.com/basic_auth
+        user: admin
+        pass: admin
