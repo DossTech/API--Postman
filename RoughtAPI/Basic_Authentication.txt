@@ -1,0 +1,10 @@
+//From other portals when we access
+
+1.Authentication:
+=================
+
+1.Basic Authentication:
+-----------------------
+    
+      username: postman
+      password: password
