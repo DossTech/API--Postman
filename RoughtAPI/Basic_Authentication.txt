@@ -14,6 +14,18 @@
         user: admin
         pass: admin
 
-2.Digit Authentication:
+2.Digest Authentication:
 -------------------------
       https://postman-echo.com/digest-auth
+       username: postman
+      password: password
+
+3.BEarer Authentication
+-----------------------
+
+
+4.API sendKey
+--------------
+
+5.Oauth Authentication
+----------------------
