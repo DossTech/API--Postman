@@ -13,3 +13,7 @@
         https://the-internet.herokuapp.com/basic_auth
         user: admin
         pass: admin
+
+2.Digit Authentication:
+-------------------------
+      https://postman-echo.com/digest-auth
