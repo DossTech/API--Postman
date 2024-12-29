@@ -1,7 +1,8 @@
 1.https://petstore.swagger.io/#/
 
-2.POST: 
-
+2.POST: ==>pre-requisit
+PRE-REQUSITE:
+------------
 const randomNum = Math.float(Math.random()*100+1);
 var randomStr = "john"+Math.random().toString(36).substring(2);
 
@@ -15,3 +16,110 @@ pm.collectionVariable.set("phone","1111111111");
 pm.collectionVariable.set("userstate",0);
 
 console.log(randomNum);
+
+BODY:
+----
+{
+  "id": {{id}},
+  "username": "{{username}}",
+  "firstName": "{{firstname}}",
+  "lastName": "{{lastname}}",
+  "email": "{{email}}",
+  "password": "{{password}}",
+  "phone": "{{phone}}",
+  "userStatus": {{userstate}}
+}
+Post-Requisit:
+--------------
+pm.test("Response code is 200", () => {
+  pm.response.to.have.status(200);
+});
+
+
+3.GET: https://petstore.swagger.io/v2/user/{{firstname}}
+
+Body:
+----
+{
+    "id": {{id}},
+    "username": "{{username}}",
+    "firstName": "{{firstname}}",
+    "lastName": "{{lastname}}",
+    "email": "{{email}}",
+    "password": "{{password}}",
+    "phone": "{{phone}}",
+    "userStatus": {{userstate}}
+}
+
+post-Request:
+------------
+pm.test("Response code is 200", () => {
+  pm.response.to.have.status(200);
+});
+
+3.PUT: Update the user lastName
+-------------------------------
+Body:
+-----
+{
+    "id": {{id}},
+    "username": "{{username}}",
+    "firstName": "{{firstname}}",
+    "lastName": "{{lastname}}",
+    "email": "{{email}}",
+    "password": "{{password}}",
+    "phone": "{{phone}}",
+    "userStatus": {{userstate}}
+}
+
+pre-REQUSITE
+------------
+
+var randomStr = "john"+Math.random().toString(36).substring(2);
+
+//update the email and phone
+
+pm.collectionVariables.set("email",randomStr+"@gmail.com");
+
+pm.collectionVariables.set("phone","2222222222");
+
+
+//console.log(randomNum);
+
+post-REQUSITE
+-------------
+pm.test("Response code is 200", () => {
+  pm.response.to.have.status(200);
+});
+
+4.Delete: user Delete
+------------------------
+Body:
+-----
+{
+    "id": {{id}},
+    "username": "{{username}}",
+    "firstName": "{{firstname}}",
+    "lastName": "{{lastname}}",
+    "email": "{{email}}",
+    "password": "{{password}}",
+    "phone": "{{phone}}",
+    "userStatus": {{userstate}}
+}
+Pre-Requisit:
+------------
+
+Post-Requsit:
+-------------
+pm.test("Response code is 200", () => {
+  pm.response.to.have.status(200);
+});
+
+pm.environment.unset("id");
+pm.collectionVariables.unset("username");
+pm.collectionVariables.unset("firstname");
+pm.collectionVariables.unset("lastname");
+pm.collectionVariables.unset("email");
+pm.collectionVariables.unset("password");
+pm.collectionVariables.unset("phone");
+pm.collectionVariables.unset("userstate");
