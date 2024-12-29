@@ -29,3 +29,26 @@
 
 5.Oauth Authentication
 ----------------------
+
+ClientId;
+
+
+=========================================
+
+SWAGGER:
+==========https://fakerestapi.azurewebsites.net/index.html
+     tool
+     an Interactive documentation can be prepared
+     FakeRESTAPI
+
+CURL: Client URL
+====================
+1.Import
+2.Rawtext
+3.Paste
+4.Save
+
+
+Documentation:
+================
+publish
