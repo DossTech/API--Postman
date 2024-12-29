@@ -123,3 +123,9 @@ pm.collectionVariables.unset("email");
 pm.collectionVariables.unset("password");
 pm.collectionVariables.unset("phone");
 pm.collectionVariables.unset("userstate");
+
+----------------------------------------------
+
+1.How to Import
+2.How to document the result
+3.how to publish
