@@ -1,0 +1,17 @@
+1.https://petstore.swagger.io/#/
+
+2.POST: 
+
+const randomNum = Math.float(Math.random()*100+1);
+var randomStr = "john"+Math.random().toString(36).substring(2);
+
+pm.environment.set("id",randomNum);
+pm.collectionVariable.set("username",randonStr);
+pm.collectionVariable.set("firstname",randonStr);
+pm.collectionVariable.set("lastname",randonStr);
+pm.collectionVariable.set("email",randonStr+"@gmail.com");
+pm.collectionVariable.set("password",randonStr);
+pm.collectionVariable.set("phone","1111111111");
+pm.collectionVariable.set("userstate",0);
+
+console.log(randomNum);
