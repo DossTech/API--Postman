@@ -1,0 +1,3 @@
+Swagger- petstore
+==================
+1.POST: adding a petstore
