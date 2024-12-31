@@ -3,3 +3,25 @@
 2.version:opencart-3.0.3.8/3.0.4.0
 
 3.Download: Xaamp - 7.4.29/PHP 7.4.29
+
+4.Download: Apachefriends.org/download.html
+
+5.Extract the open kart---->and passte the folder in the XAAMp folder/htdocs    (remove the version number)
+
+6.In XAMP-->hdoc--->opncart--->upload(rename as config.php)
+
+7.In XAMP-->hdoc--->opncart--->admin(rename as config.php)
+
+8.Start running---->Apache, Mysql
+
+9.Load the url: http://localhost/phpmyadmin
+
+10.Now open it and --->Database--->"Opencart"==="Collution"
+
+11.Click on the link===>""
+
+12.Click the "Upload" button
+
+13.Select all(should be green, if not go to Apache--->config button--php-->extension=gd
+
+14.In XAMP --- install folder(delete it)
